@@ -1,0 +1,29 @@
+[
+  {
+    "model": "api.subject",
+    "pk": 1,
+    "fields": {
+      "name": "Математика"
+    }
+  },
+  {
+    "model": "api.task",
+    "pk": 1,
+    "fields": {
+      "subject": 1,
+      "text": "На рисунке изображён график функции y=kx+b. Найдите f(15).",
+      "correct_answer": "31",
+      "topic": "Линейные функции"
+    }
+  },
+  {
+    "model": "api.task",
+    "pk": 2,
+    "fields": {
+      "subject": 1,
+      "text": "Решите уравнение: 2x+3=11",
+      "correct_answer": "4",
+      "topic": "Уравнения"
+    }
+  }
+]
