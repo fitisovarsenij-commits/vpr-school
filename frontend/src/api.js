@@ -25,3 +25,13 @@ export async function login(username, password) {
   });
   return response.json();
 }
+export async function getProfile(token) {
+  const response = await fetch(`${API_URL}/profile/`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': Token ${token},
+    },
+  });
+  return response.json();
+}
