@@ -27,7 +27,7 @@ export async function getProfile(token) {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": Token ${token},
+      "Authorization": `Token ${token}`,
     },
   });
   return response.json();
@@ -38,7 +38,7 @@ export async function getTasks(token) {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": Token ${token},
+      "Authorization": `Token ${token}`,
     },
   });
   return response.json();
@@ -49,7 +49,7 @@ export async function submitAnswers(token, answers) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": Token ${token},
+      "Authorization": `Token ${token}`,
     },
     body: JSON.stringify({ answers }),
   });
